@@ -1,0 +1,50 @@
+/* all pages */
+
+.nav-bar {
+    background-color: #003262;
+    overflow: hidden;
+}
+
+.nav-bar a{
+   float: right;
+   display:inline;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+   padding: 15px;
+}
+
+body { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-header {
+    font-weight: 700;
+    font-size: 34px;
+    color: #FDB515;
+}
+
+.subheader {
+    font-weight: 600;
+    font-size: 28px;
+    color: #FDB515;
+}
+
+.header-background {
+    background-color: #003262;
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+}
+
+/* home page */
+
+/* decades pages */
+
+/* 2021 page */
