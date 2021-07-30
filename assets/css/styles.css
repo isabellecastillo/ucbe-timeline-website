@@ -1,17 +1,40 @@
 /* all pages */
 
+* {
+    box-sizing: border-box; 
+}
+
+/* ADD NAV BAR STYLES */
+
 .nav-bar {
+    position: relative;
+    width: 100%;
+    height: 60px;
     background-color: #003262;
     overflow: hidden;
 }
 
-.nav-bar a{
-   float: right;
-   display:inline;
-   color: white;
-   text-align: center;
-   font-size: 18px;
-   padding: 15px;
+.nav-bar a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 18px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-logo {
+    position: absolute;
+    padding: 15px 10px;
+}
+
+.nav-logo a{
+    text-align: center;
+    padding: 0px 0px 30px 0px;
 }
 
 body { 
@@ -45,6 +68,11 @@ body {
 
 /* home page */
 
+
 /* decades pages */
+
+.timeline-background {
+    background-color:rgba(238, 238, 238, 0.95);
+}
 
 /* 2021 page */
