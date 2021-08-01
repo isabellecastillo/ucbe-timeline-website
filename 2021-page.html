@@ -7,12 +7,15 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap-grid.min.css" integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- icon font code -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-      <!-- my style sheet -->
-      <link rel="stylesheet" href="./assets/css/styles.css" />
+      <!-- carousel css sheet -->
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- Google font code -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+      <!-- my style sheet -->
+      <link rel="stylesheet" href="./assets/css/styles.css" />
 
     </head>
 
@@ -34,23 +37,25 @@
             <a href="index.html" class="nav-links">Home</a>
           </div>
         </div>
-      </nav>
+      </nav> 
 
+      <!-- hero image and page title -->
       <div class="container">
         <div class="row">
-          <!-- <div class="col"> -->
+          <div class="parent-box">
             <img class="responsive-image" src="./assets/images/2021-page-hero-image-opt.png" />
-          <!-- </div> -->
+            <div class="subheader subheader-background child-center">2021</div>
+          </div>
         </div>
-
       </div>
 
+      <!-- logo and text -->
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 offset-lg-2">
-            <img src="./assets/images/ucbe130-logo-opt.png" class="responsive-image"/>
+          <div class="col-md-4 order-1 col-lg-3 offset-lg-1">
+            <img src="./assets/images/ucbe130-logo-opt.png" class="responsive-image center"/>
           </div>
-          <div class="col-lg-6">
+          <div class="col-md-7 order-0 order-md-1">
             <p>
               In the wake of the 2020 pandemic, and still grappling with its socioeconomic fallout, Extension fully embraced an “Online First” strategy with the objective of creating better access to learners in the San Francisco Bay Area as well as across the U.S. and around the globe. By assuming its role as global representative of the university for study away and study abroad partnerships, Extension is also investing in institutional partnerships to build meaningful study pathways within the U.S. and internationally. Finally, to provide more access to college, Extension plans to develop Pre-Collegiate and K-12 offerings with defined pathways into partner colleges.
             </p>
@@ -58,6 +63,71 @@
         </div>
       </div>
 
+      <!-- carousel -->
+
+      <div class="container">
+        <div class="center">
+          <div>
+            <img class="responsive-image" src=./assets/images/rotating-image-1-opt.jpg />
+          </div>
+          <div>
+            <img class="responsive-image" src=./assets/images/rotating-image-2-opt.jpg />
+          </div>
+          <div>
+            <img class="responsive-image" src=./assets/images/rotating-image-3-opt.jpg />
+          </div>
+          <div>
+            <img class="responsive-image" src=./assets/images/rotating-image-4-opt.jpg />
+          </div>
+          <div>
+            <img class="responsive-image" src=./assets/images/rotating-image-5-opt.jpg />
+          </div>
+          <div>
+            <img class="responsive-image" src=./assets/images/rotating-image-6-opt.jpg />
+          </div>
+          <div>
+            <img class="responsive-image" src=./assets/images/rotating-image-7-opt.jpg />
+          </div>
+          <div>
+            <img class="responsive-image" src=./assets/images/rotating-image-8-opt.jpg />
+          </div>
+        </div>
+      </div>
+
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+      <script>
+        $('.center').slick({
+          dots: true,
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+      </script>
     </body>
 
 </html>
