@@ -4,7 +4,18 @@
     box-sizing: border-box; 
 }
 
-/* ADD NAV BAR STYLES */
+body { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.responsive-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* NAV BAR STYLES */
 
 .nav-bar {
     position: relative;
@@ -14,12 +25,46 @@
     overflow: hidden;
 }
 
-.nav-bar a {
+.nav-logo {
+    position: absolute;
+    top: 20px;
+}
+
+/* .center {
+    float: right;
+    position: absolute;
+} */
+
+.menu-icon {
     float: right;
     display: block;
-    text-align: center;
-    padding: 20px 15px;
+    color: white;
+    visibility: visible;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.nav-links {
+    display: inline;
+    text-align: right;
     font-size: 18px;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 768px){
+    .nav-links {
+        display: block;
+        text-align: right;
+        padding: 20px 15px;
+        font-size: 18px;
+        visibility: visible;
+}
+
+.menu-icon {
+    visibility: hidden;
+}
+
 }
 
 a:visited {
@@ -27,35 +72,16 @@ a:visited {
     color: white;
 }
 
-.nav-logo {
-    position: absolute;
-    padding: 15px 10px;
-}
-
-.nav-logo a{
-    text-align: center;
-    padding: 0px 0px 30px 0px;
-}
-
-body { 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-
-.responsive-image {
-    max-width: 100%;
+.image-box {
+    position: relative;
+    display: block;
+    width: 100%;
     height: auto;
 }
 
 .title-header {
     font-weight: 700;
-    font-size: 34px;
-    color: #FDB515;
-}
-
-.subheader {
-    font-weight: 600;
-    font-size: 28px;
+    font-size: 20px;
     color: #FDB515;
 }
 
@@ -63,10 +89,53 @@ body {
     background-color: #003262;
     width: fit-content;
     height: auto;
-    padding: 20px;
+    padding: 15px;
 }
 
+.subheader {
+    font-weight: 600;
+    font-size: 18px;
+    color: #FDB515;
+}
+
+@media screen and (min-width: 768px){
+    .title-header {
+        font-weight: 700;
+        font-size: 34px;
+        color: #FDB515;
+    }
+
+    .header-background {
+        background-color: #003262;
+        width: fit-content;
+        height: auto;
+        padding: 20px;
+    }
+
+    .subheader {
+        font-weight: 600;
+        font-size: 28px;
+        color: #FDB515;
+    }
+}
+
+
 /* home page */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+    
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
 
 
 /* decades pages */
