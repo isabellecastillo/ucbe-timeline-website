@@ -100,13 +100,29 @@ a:visited {
     background-color: #003262;
     width: fit-content;
     height: auto;
-    padding: 10px 30px;
+    padding: 10px 40px;
 }
 
 .subheader {
     font-weight: 600;
     font-size: 18px;
-    color: #FDB515;
+    color: #FDB515; 
+}
+
+@media screen and (min-width: 500px){
+    .subheader {
+        font-weight: 600;
+        font-size: 24px;
+        color: #FDB515;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .subheader {
+        font-weight: 600;
+        font-size: 28px;
+        color: #FDB515;
+    }
 }
 
 @media screen and (min-width: 960px){
@@ -123,11 +139,6 @@ a:visited {
         padding: 20px;
     }
 
-    .subheader {
-        font-weight: 600;
-        font-size: 28px;
-        color: #FDB515;
-    }
 }
 
 
@@ -172,18 +183,26 @@ a:visited {
   .child-center {
       position: absolute;
       top: 75%;
-      left: 35%;
+      left: 30%;
   }
 
 @media screen and (min-width: 500px) {
     .child-center {
         position: absolute;
         top: 80%;
-        left: 40%;
+        left: 37%;
     }
 }
 
 @media screen and (min-width: 768px) {
+    .child-center {
+        position: absolute;
+        top: 85%;
+        left: 42%;
+    }
+}
+
+@media screen and (min-width: 992px) {
     .child-center {
         position: absolute;
         top: 90%;
@@ -196,6 +215,6 @@ a:visited {
 }
 
 .carousel-margin {
-    margin-top: 50px;
+    margin-top: 40px;
     /* margin-bottom: 30px; */
 }
