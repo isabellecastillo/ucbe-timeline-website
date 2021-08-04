@@ -39,8 +39,8 @@
     <!-- hero image + header -->
     <div class="container">
       <div class="row">
-        <div class="parent-box-home">
-          <img class="home-page-hero-image" src="./assets/images/home-page-hero-image.png"/>
+        <div class="parent-box-title">
+          <img class="home-page-hero-image" src="./assets/images/home-page-hero-image-opt.png"/>
           <div class="child-left">
             <h1 class="title-header header-background">Lighting the way for 130 years</h1>
           </div>
@@ -50,9 +50,9 @@
 
       <section class="container">
         <div class="row">
-          <div class="parent-box-home">
-            <div class="col-10 offset-2 col-sm-10 offset-sm-2 col-lg-10 offset-lg-3 col-xl-11 offset-xl-4">
-            <img src="./assets/images/our-roots-image.png" class="responsive-image"/>
+          <div class="parent-box-subhead">
+            <div class="col-10 offset-2 col-sm-10 offset-sm-2 col-lg-9 offset-lg-3">
+            <img src="./assets/images/our-roots-image-opt.jpg" class="home-page-subhead-image"/>
             <div class="child-float-left">
               <header class="subheader subheader-background">Our roots</header>
             </div>
@@ -60,9 +60,10 @@
           </div>
         </div>
         <div class="col-12 col-lg-8 offset-lg-2">
-              <p>
+              <p class="intro">
                 In 1891, Berkeley faculty started teaching courses in history, philosophy, mathematics, and English to the public in San Francisco, with great success (over 800 learners in the first fall semester). This initiative came to life as a reaction to calls from the Californian people to make the university’s education offerings more accessible and to fully embrace its mission as a land grant university. 
               </p>
+            <div class="remainder-text">
               <p>
                 Indeed, until today, the University of California is bound “to serve society as a center of higher learning, providing long-term societal benefits through transmitting advanced knowledge, discovering new knowledge, and functioning as an active working repository of organized knowledge”. For the founders of the university’s Extension, this mission meant providing access to learners of all ages and as a consequence, they pioneered the uniquely American concept of lifelong learning through continuing education. In fact, the name of ‘lifelong learning’ was coined by one of Extension's first deans, Sean J. Richardson.
               </p>
@@ -73,34 +74,58 @@
                 With the idea to give access to its excellent educational offerings to people of all ages, who would attend a single course at a time while working, Extension breached the gap of academia and the professional world, and created one of the most advanced and successful continuing education departments in history.
               </p>
             </div>
+            
+            <button type="button" class="toggle-button">show more</button>
+          </div>
         </section>
 
         <section class="container">
           <div class="row">
-            <div class="parent-box-home">
-              <img class="responsive-image" src="./assets/images/our-reach-image.png"/>
-              <div class="child-float-right">
-                <header class="subheader subheader-background">Our reach</header>
+            <div class="parent-box-subhead">
+              <div class="col-10 col-lg-9"> 
+                <img src="./assets/images/our-reach-image-opt.jpg" class="home-page-subhead-image"/>
+                <div class="child-float-right">
+                  <header class="subheader subheader-background">Our reach</header>
+                </div>
               </div>
             </div>
           </div>
             <div class="col-12 col-lg-8 offset-lg-2">
-              <p>
+              <p class="intro">
                 The central concept of Extension, as envisioned by its first proponents, notably the two UC Presidents, Edward S. Holden and Horace Davis, has always been the accessibility to the courses offered by our instructors. Consequently, Extension courses took place where the learners worked and lived, not on the remote campus in Berkeley. After the immediate success of its first courses, the regents officially adopted an extramural instruction plan that formally established the University Extension on Valentine’s Day, February 14, 1893.
               </p>
+            <div class="remainder-text">
               <p>
                 The concept of accessibility and the willingness to go towards the learners led Extension to constantly innovate new ways of reaching learners. For example, in 1928 Extension taught on commuter trains, in 1945 Extension taught over 26,000 learners via its correspondence courses, in 1994 Extension ventured into online education, and in 2012 Extension created the UC’s first online course production department BRCO.
               </p> 
               <p> 
-                Today, in part due to the global pandemic, Extension has developed the capacity to reach learners beyond the Bay Area with live instruction. Learners from anywhere in the world are now able to join our courses and we can help them to launch or change their careers, to support their families, and share their knowledge and the Berkeley mindset.     
-              </p>   
+                Today, in part due to the global pandemic, Extension has developed the capacity to reach learners beyond the Bay Area with live instruction. Learners from anywhere in the world are now able to join our cou10rses and we can help them to launch or change their careers, to support their families, and share their knowledge and the Berkeley mindset.     
+              </p>
+            </div>
+            <button type="button" class="toggle-button">show more</button>
             </div>    
         </section>
 
         <!-- FIX THE SIZING ON THIS -->
         <div class="embed-container">
-            <iframe src='https://www.youtube.com/embed/qYGH6CmYzEE' frameborder='0' allowfullscreen></iframe>
+            <iframe src='https://www.youtube.com/embed/qYGH6CmYzEE' frameborder='' allowfullscreen></iframe>
         </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function() {
+              $('.toggle-button').on('click', function(){
+                const buttonText = $(this).text().toLowerCase();
+        
+                $(this).prev('.remainder-text').slideToggle();
+                $(this).text(buttonText === 'show more' ? 'show less' : 'show more');
+              });
+            });
+          </script>
     </body>
 
 </html>
