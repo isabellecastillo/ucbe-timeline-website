@@ -26,7 +26,16 @@ body {
 
 .nav-logo {
     position: absolute;
-    top: 15px;
+    top: 18px;
+    display: block;
+    max-width: 75%;
+    height: auto;
+}
+
+@media screen and (min-width: 500px) {
+    .nav-logo {
+        top: 15px;
+    }
 }
 
 ul {
@@ -329,18 +338,18 @@ button:hover {
     display: none;
 }
 
-@media screen and (min-width:657px) {
+@media screen and (min-width:576px) {
     .timeline-container {
         display: block;
+    }
 }
-
 .timeline-links {
     color:  #003262;
     text-align: center;
 }
 
 .timeline-links li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .timeline-links a:link {
     text-decoration: none;
@@ -357,6 +366,18 @@ button:hover {
     font-weight: 700;
 }
 
+.parent-box-decade {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.decade-page-subhead-image {
+    max-width: 100%;
+    height:130px;
+    object-fit: cover;
+    object-position: 40% 100%;
+}
+
 /* 2021 page */
 
 .parent-box-2021 {
@@ -370,14 +391,14 @@ button:hover {
     }
 }
 
-  .child-center {
+  .child-2021-center {
       position: absolute;
       top: 75%;
       left: 30%;
   }
 
 @media screen and (min-width: 500px) {
-    .child-center {
+    .child-2021-center {
         position: absolute;
         top: 80%;
         left: 37%;
@@ -385,7 +406,7 @@ button:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .child-center {
+    .child-2021-center {
         position: absolute;
         top: 85%;
         left: 42%;
@@ -393,7 +414,7 @@ button:hover {
 }
 
 @media screen and (min-width: 992px) {
-    .child-center {
+    .child-2021-center {
         position: absolute;
         top: 90%;
         left: 45%;
@@ -402,6 +423,8 @@ button:hover {
 
 .center {
     display: block;
+    max-width: 100%;
+    height: auto;
     margin: auto;
   }
 
@@ -413,5 +436,3 @@ button:hover {
     margin-top: 40px;
     /* margin-bottom: 30px; */
 } 
-
-}
