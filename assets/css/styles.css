@@ -354,8 +354,10 @@ button:hover {
     border: none;
     width: 100%;
     font-size: 18px;
+    font-weight: 700;
     text-align: justify;
     padding: 15px;
+    color:  #003262;
 }
 
 #main-navigation {
@@ -374,6 +376,19 @@ button:hover {
     z-index: 2;
 }
 
+#main-navigation li {
+    margin-bottom: 30px;
+}
+
+#main-navigation a:visited {
+    color:  #003262;
+}
+
+#main-navigation a:hover {
+    font-weight: 700;
+}
+
+
 .timeline-container {
     background-color:rgba(238, 238, 238, 0.95);
     width: 100%;
@@ -389,28 +404,28 @@ button:hover {
     }
 }
 
-.timeline-links {
+.timeline-sidebar-links {
     color:  #003262;
     text-align: center;
 }
 
-.timeline-links li {
+.timeline-sidebar-links li {
     margin-bottom: 30px;
 }
 
-.timeline-links a:link {
+.timeline-sidebar-links a:link {
     text-decoration: none;
 }
 
-.timeline-links a:visited {
+.timeline-sidebar-links a:visited {
     color:  #003262;
 }
 
-.timeline-links a:hover {
+.timeline-sidebar-links a:hover {
     font-weight: 700;
 }
 
-.timeline-links a:active {
+.selected {
     font-weight: 700;
 }
 
