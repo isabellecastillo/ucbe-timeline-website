@@ -405,7 +405,6 @@ button:hover {
 }
 
 .timeline-sidebar-links {
-    color:  #003262;
     text-align: center;
 }
 
@@ -415,6 +414,7 @@ button:hover {
 
 .timeline-sidebar-links a:link {
     text-decoration: none;
+    color:  #003262;
 }
 
 .timeline-sidebar-links a:visited {
