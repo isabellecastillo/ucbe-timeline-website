@@ -24,14 +24,14 @@
     <body>
       <nav class="nav-bar">
         <ul>
-          <li class="nav-logo">
-            <a href="index.html"><img src="./assets/images/ucbe-white-logo.png" class="responsive-image" alt="UC Berkeley Extension logo"></a>
+          <li>
+            <a href="index.html"><img src="./assets/images/ucbe-white-logo.png" class="nav-logo" alt="UC Berkeley Extension logo"></a>
           </li>
           <li>
-            <a id="simple-menu" href="#sidr"><i class="zmdi zmdi-menu menu-icon"></i></a>
+            <a id="simple-menu" href="#sidr" aria-label="Click here to view the mobile slideout menu."><i class="zmdi zmdi-menu menu-icon"></i></a>
             <div id="sidr">
               <ul>
-                <li id="closeMenu">Close</li>
+                <li id="closeMenu">    Close</li>
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="1891-1910-page.html">Timeline</a></li>
                 <li><a href="2021-page.html">2021</a></li>
@@ -101,15 +101,15 @@
             </aside>
           </div>
 
-      <!-- section 1 header -->
           <div class="col-sm-8 col-md-9 col-lg-10">
+          <!-- section 1 header -->
             <div class="row">
               <div class="col-md-10 offset-md-2">
                 <div class="parent-box-decade">
-                  <figure>
-                    <img src="./assets/images/1911-1920-image-1-opt.png" class="decade-page-subhead-image" alt="Doe Library">
+                  <figure class="center-image">
+                    <img src="./assets/images/1911-1920-image-1-opt.png" class="decade-page-subhead-image shift-subhead-image" alt="Doe Library in 1911">
                     <figcaption>
-                      Doe Library, 1911. View of main reading room, looking east, with North Hall visible beyond window.
+                      Doe Library, 1911. Main reading room, looking east, with North Hall visible beyond window.
                     </figcaption>
                   </figure>
                   <div class="child-decade-left">
@@ -122,9 +122,9 @@
             <!-- section 1 content -->
             <div class="row decade-section-spacing">
               <div class="col-12 order-1 col-md-4 order-md-0">
-                <div class="row">
+                <div class="row row-cols-md-1">
                   <figure class="col margin-adjust">
-                    <img src="./assets/images/1911-1920-image-2-opt.png" class="responsive-image" alt="Photo of the Campanile"/>
+                    <img src="./assets/images/1911-1920-image-2-opt.png" class="responsive-image" alt="Campanile being constructed in 1914"/>
                     <figcaption>
                       Campanile, 1914
                     </figcaption>
@@ -165,7 +165,7 @@
           <div class="row">
           <div class="col col-md-10">
             <div class="parent-box-decade">
-              <figure>
+              <figure class="center-image">
                 <img src="./assets/images/1921-1930-image-1-opt.png" class="decade-page-subhead-image" alt="Picture of South Hall in 1921">
                 <figcaption>
                   South Hall, c1921
@@ -193,10 +193,10 @@
             </div>
             
             <div class="col-12 order-0 col-md-4 order-md-1">
-              <div class="row">
+              <div class="row row-cols-md-1">
                 <figure class="col margin-adjust">
                   <img src="./assets/images/1921-1930-image-2-opt.png" class="responsive-image" alt="Students exiting out of Wheeler Hall"/>
-                  <figcaption>
+                  <figcaption class="caption-container">
                     Students coming from Wheeler Hall, southeast entrance
                   </figcaption>
                 </figure>

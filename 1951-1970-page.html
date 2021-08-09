@@ -24,14 +24,14 @@
     <body>
       <nav class="nav-bar">
         <ul>
-          <li class="nav-logo">
-            <a href="index.html"><img src="./assets/images/ucbe-white-logo.png" class="responsive-image" alt="UC Berkeley Extension logo"></a>
+          <li>
+            <a href="index.html"><img src="./assets/images/ucbe-white-logo.png" class="nav-logo" alt="UC Berkeley Extension logo"></a>
           </li>
           <li>
-            <a id="simple-menu" href="#sidr"><i class="zmdi zmdi-menu menu-icon"></i></a>
+            <a id="simple-menu" href="#sidr" aria-label="Click here to view the mobile slideout menu."><i class="zmdi zmdi-menu menu-icon"></i></a>
             <div id="sidr">
               <ul>
-                <li id="closeMenu">Close</li>
+                <li id="closeMenu">    Close</li>
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="1891-1910-page.html">Timeline</a></li>
                 <li><a href="2021-page.html">2021</a></li>
@@ -101,12 +101,12 @@
             </aside>
           </div>
 
-      <!-- section 1 header -->
           <div class="col-sm-8 col-md-9 col-lg-10">
+          <!-- section 1 header -->  
             <div class="row">
               <div class="col-md-10 offset-md-2">
                 <div class="parent-box-decade">
-                  <figure>
+                  <figure class="center-image">
                     <img src="./assets/images/1951-1960-image-1-opt.png" class="decade-page-subhead-image" alt="Picture of students protesting and holding a 'Free Speech' banner at Sather Gate">
                     <figcaption>
                       Free Speech Movement, students protesting by Sather Gate 
@@ -121,13 +121,13 @@
             <!-- section 1 content -->
             <div class="row decade-section-spacing">
               <div class="col-12 order-1 col-md-4 order-md-0">
-                <div class="row">
+                <div class="row row-cols-md-1">
                   <figure class="col margin-adjust">
                     <img src="./assets/images/1951-1960-image-2-opt.png" class="responsive-image" alt="Picture of the cover of a UC Berkeley Extension catalog"/>
                   </figure>
                   <figure class="col margin-adjust">
                     <img src="./assets/images/1951-1960-image-3-opt.png" class="responsive-image" alt="Students protesting in Sproul Plaza"/>
-                    <figcaption>
+                    <figcaption class="caption-container">
                       Free Speech Movement. Crowd surrounding police car on Sproul Plaza
                     </figcaption>
                   </figure>
@@ -152,7 +152,7 @@
           <div class="row">
           <div class="col col-md-10">
             <div class="parent-box-decade">
-              <figure>
+              <figure class="center-image">
                 <img src="./assets/images/1961-1970-image-1-opt.png" class="decade-page-subhead-image" alt="Green line and circle tesselation pattern">
               </figure>
               <div class="child-decade-right">
@@ -177,7 +177,7 @@
             </div>
             
             <div class="col-12 order-0 col-md-4 order-md-1">
-              <div class="row">
+              <div class="row row-cols-md-1">
                 <figure class="col margin-adjust">
                   <img src="./assets/images/1961-1970-image-2-opt.png" class="responsive-image" alt="Cover of the 1960 correspondence courses catalog"/>
                 </figure>
