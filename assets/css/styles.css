@@ -404,6 +404,8 @@ button:hover {
 
 #main-navigation a:link {
     text-decoration: none;
+    color:  #003262;
+
 }
 
 #main-navigation a:visited {
